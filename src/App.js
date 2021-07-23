@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import React from "react";
+import './App.css'
+import Navigator from './component/Navigator'
+import Homepage from './component/Homepage'
+import Contact from './component/Contact'
+import Skill from './component/Skill'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { useState} from 'react'
 function App() {
+  const [language,setLanguage] = useState('eng')
+  const display = (language) =>{
+    setLanguage(language)
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navigator display={display} language={language}></Navigator>
+      <Route exact path='/' component ={()=> <Homepage language={language}/>}></Route>
+      <Route path='/skill' component ={Skill}></Route>
+      <Route path='/contact' component ={Contact}></Route>
+    </Router>
   );
 }
 
