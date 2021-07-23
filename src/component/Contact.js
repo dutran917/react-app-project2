@@ -9,12 +9,13 @@ import gm from '../gmail.png'
 import gh from '../github.png'
 const Contact = ()=> {
     const Style = {
-        width:"400px",
-        height:"400px",
+        width: "400px",
+        height: "400px",
         loading:"lazy"
     }
     return(
-        <div className='location'>
+        <div>
+            <section className='location'>
             <div>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d931.2095828109711!2d105.85302281523607!3d20.999116712928643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac0cd0cd0fe1%3A0x65a39673b48fd978!2zMTU2IEjhu5NuZyBNYWksIELhuqFjaCBNYWksIEhhaSBCw6AgVHLGsG5nLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1626972081349!5m2!1svi!2s" style={Style}  allowfullscreen=""></iframe>
             </div>
@@ -34,6 +35,7 @@ const Contact = ()=> {
                 
                 <Button className='btn-sent'> Sent <BiMessageRoundedCheck></BiMessageRoundedCheck> </Button>
             </Form>
+            </section>
             <Navbar bg='dark' variant ='dark' fixed ='bottom'> 
                 <div>
                     <p className='sns' >156 Hong Mai, HBT, Ha Noi</p>
@@ -49,6 +51,7 @@ const Contact = ()=> {
                     <a href="https://github.com/dutran917"><img src={gh}></img></a>
                 </div>
             </Navbar>
+        
         </div>
     )
 }

@@ -1,4 +1,14 @@
-
+body::-webkit-scrollbar{
+  width: 10px;
+}
+body::-webkit-scrollbar-track{
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+body::-webkit-scrollbar-thumb{
+  border-radius: 5px;
+  background-color: gray;
+}
 
 
 .txtdeepshadow {
@@ -95,12 +105,12 @@
   display: flex;
   justify-content: center;
   background: linear-gradient(lightblue,pink);
-  height: 700px;
-  padding-top: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .contact-me{
   background: rgba(255,255,255,0.2);
-  width: 300px;
+  width: 400px;
   margin-left: 50px;
   border: black none 5px;
   border-radius: 20px;
