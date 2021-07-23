@@ -45,9 +45,8 @@ const Contact = ()=> {
                 </div>
                 <div className='icon-mxh'>
                     <a href="https://www.facebook.com/du.tran.5494/"><img src={fb}></img></a>
-                    <a href="https://www.facebook.com/du.tran.5494/"><img src={ig}></img></a>
-                    <a href="https://www.facebook.com/du.tran.5494/"><img src={gm}></img></a>
-                    <a href="https://www.facebook.com/du.tran.5494/"><img src={gh}></img></a>
+                    <a href="https://www.instagram.com/du.tran917/"><img src={ig}></img></a>
+                    <a href="https://github.com/dutran917"><img src={gh}></img></a>
                 </div>
             </Navbar>
         </div>
